@@ -34,7 +34,7 @@ namespace ICT.Strypes.Infrastructure.Repositories
             }
         }
 
-        public async Task<bool> IsChargePointExistAsync(string chargePointId)
+        public async Task<bool> DoChargePointExistAsync(string chargePointId)
         {
             try
             {

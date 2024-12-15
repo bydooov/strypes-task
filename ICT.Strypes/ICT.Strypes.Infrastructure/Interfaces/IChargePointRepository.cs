@@ -6,6 +6,6 @@ namespace ICT.Strypes.Infrastructure.Interfaces
     {
         Task CreateChargePointAsync(ChargePoint chargePoint);
         Task UpdateChargePointAsync(ChargePoint chargePoint);
-        Task<bool> IsChargePointExistAsync(string chargePointId);
+        Task<bool> DoChargePointExistAsync(string chargePointId);
     }
 }

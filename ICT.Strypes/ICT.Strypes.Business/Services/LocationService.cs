@@ -86,7 +86,7 @@ namespace ICT.Strypes.Business.Services
                 }
                 else
                 {
-                    if (await _chargePointRepository.IsChargePointExistAsync(requestedChargePoint.ChargePointId!).ConfigureAwait(false))
+                    if (await _chargePointRepository.DoChargePointExistAsync(requestedChargePoint.ChargePointId!).ConfigureAwait(false))
                     {
                         throw new BadRequestException(string.Format(ErrorMessages.ChargePointDuplicatedErrorMessage, requestedChargePoint.ChargePointId));
                     }
